@@ -1,27 +1,32 @@
 import { GraphQLServer } from 'graphql-yoga'
 
+// 5 Scalar ,,, String , Float , Int , ID, Boolean
+
 // Type Definitions
 const typeDefs = `
     type Query {
-        hello: String!,
-        location: String!,
-        bio: String!
+        title: String!,
+        price: Float!,
+        releaseYear: Int,
+        rating: Float,
+        inStock: Boolean!
     }
 `
 
-//  Resolvers
+// Defined Resolvers
 const resolvers = {
 	Query: {
-		hello: () => 'SOrry this is Hello',
-		location: () => ' No 522(A) South Dagon 19 ward Ygn',
-		bio: () => ' My Bio is Not Biology '
+		title: () => 'Punch Up Kicks',
+		price: () => 1.4,
+		releaseYear: () => 2008,
+		rating: () => 4.3,
+		inStock: () => true
 	}
 }
 
-// GraphQl Server Start
 const server = new GraphQLServer({
 	typeDefs,
 	resolvers
 })
 
-server.start(() => console.log(`Server Start Port 4000`))
+server.start(e => console.log(`Server Start At 4000 `))
