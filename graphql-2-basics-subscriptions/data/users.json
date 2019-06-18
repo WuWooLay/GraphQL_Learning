@@ -1,0 +1,20 @@
+[
+	{
+		"id": "1",
+		"name": "Lwin Moe Paing",
+		"email": "lwinmoepaing.dev@gmail.com",
+		"age": 23
+	},
+	{
+		"id": "2",
+		"name": "Htet Naing Linn",
+		"email": "htetnainglinn143@gmail.com",
+		"age": 23
+	},
+	{
+		"id": "3",
+		"name": "Kaung Thu Lin",
+		"email": "kaungthulin0@gmail.com",
+		"age": 23
+	}
+]
